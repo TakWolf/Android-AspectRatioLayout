@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="AspectRatioLayout">
+        <attr name="arl_widthRatio" format="float" />
+        <attr name="arl_heigthRatio" format="float" />
+    </declare-styleable>
+
+</resources>
