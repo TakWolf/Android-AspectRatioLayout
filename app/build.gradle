@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "com.takwolf.android.aspectratio.demo"
-        minSdkVersion 8
+        minSdkVersion 9
         targetSdkVersion 24
         versionCode Integer.parseInt(new Date().format("yyyyMMdd"))
         versionName "0.0.1"
