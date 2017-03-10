@@ -11,7 +11,7 @@ import android.widget.FrameLayout;
 public class AspectRatioLayout extends FrameLayout {
 
     private float widthRatio;
-    private float heigthRatio;
+    private float heightRatio;
 
     public AspectRatioLayout(Context context) {
         super(context);
@@ -37,7 +37,7 @@ public class AspectRatioLayout extends FrameLayout {
     private void init(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.AspectRatioLayout, defStyleAttr, defStyleRes);
         widthRatio = a.getFloat(R.styleable.AspectRatioLayout_arl_widthRatio, 1);
-        heigthRatio = a.getFloat(R.styleable.AspectRatioLayout_arl_heigthRatio, 1);
+        heightRatio = a.getFloat(R.styleable.AspectRatioLayout_arl_heightRatio, 1);
         a.recycle();
     }
 
@@ -53,9 +53,9 @@ public class AspectRatioLayout extends FrameLayout {
 
         if (widthMode == MeasureSpec.EXACTLY) {
             width = widthSize;
-            height = (int) (heigthRatio / widthRatio * widthSize);
+            height = (int) (heightRatio / widthRatio * widthSize);
         } else if (heightMode == MeasureSpec.EXACTLY) {
-            width = (int) (widthRatio / heigthRatio * heightSize);
+            width = (int) (widthRatio / heightRatio * heightSize);
             height = heightSize;
         } else {
             throw new RuntimeException("Must make width or height measure spec exactly.");
@@ -73,17 +73,17 @@ public class AspectRatioLayout extends FrameLayout {
         return widthRatio;
     }
 
-    public float getHeigthRatio() {
-        return heigthRatio;
+    public float getHeightRatio() {
+        return heightRatio;
     }
 
     public float getAspectRatio() {
-        return widthRatio / heigthRatio;
+        return widthRatio / heightRatio;
     }
 
-    public void setAspectRatio(float widthRatio, float heigthRatio) {
+    public void setAspectRatio(float widthRatio, float heightRatio) {
         this.widthRatio = widthRatio;
-        this.heigthRatio = heigthRatio;
+        this.heightRatio = heightRatio;
         requestLayout();
     }
 
