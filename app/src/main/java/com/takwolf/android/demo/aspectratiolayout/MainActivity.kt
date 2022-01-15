@@ -1,4 +1,4 @@
-package com.takwolf.android.aspectratiolayoutdemo
+package com.takwolf.android.demo.aspectratiolayout
 
 import androidx.appcompat.app.AppCompatActivity
 

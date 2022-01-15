@@ -7,7 +7,7 @@ android {
     compileSdk = 31
 
     defaultConfig {
-        applicationId = "com.takwolf.android.aspectratiolayoutdemo"
+        applicationId = "com.takwolf.android.demo.aspectratiolayout"
         minSdk = 21
         targetSdk = 31
         versionCode = 1
