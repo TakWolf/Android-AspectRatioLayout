@@ -47,11 +47,14 @@ There is another way to make aspect ratio layout by [ConstraintLayout](https://d
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     
-    <TextView
+    <View 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintDimensionRatio="4:3" />
-    
+        android:background="?colorPrimary"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintDimensionRatio="16:9" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
 
