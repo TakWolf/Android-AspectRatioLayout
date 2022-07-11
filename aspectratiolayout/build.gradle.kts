@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    compileSdk = 31
+    compileSdk = 32
 
     defaultConfig {
         minSdk = 21
-        targetSdk = 31
+        targetSdk = 32
         consumerProguardFiles("consumer-rules.pro")
     }
 
@@ -24,7 +24,7 @@ android {
 }
 
 dependencies {
-    compileOnly("androidx.annotation:annotation:1.3.0")
+    compileOnly("androidx.annotation:annotation:1.4.0")
 }
 
 tasks {
