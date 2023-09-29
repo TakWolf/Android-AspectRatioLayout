@@ -6,11 +6,10 @@ plugins {
 
 android {
     namespace = "com.takwolf.android.aspectratiolayout"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         minSdk = 21
-        targetSdk = 33
 
         consumerProguardFiles("consumer-rules.pro")
     }
@@ -26,7 +25,7 @@ android {
 }
 
 dependencies {
-    compileOnly("androidx.annotation:annotation:1.4.0")
+    compileOnly("androidx.annotation:annotation:1.6.0")
 }
 
 tasks {

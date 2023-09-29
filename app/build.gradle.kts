@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.takwolf.android.demo.aspectratiolayout"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.takwolf.android.demo.aspectratiolayout"
         minSdk = 21
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "0.0.1"
     }
@@ -33,7 +33,7 @@ android {
 }
 
 dependencies {
-    implementation("androidx.core:core-ktx:1.8.0")
-    implementation("androidx.appcompat:appcompat:1.4.2")
+    implementation("androidx.core:core-ktx:1.12.0")
+    implementation("androidx.appcompat:appcompat:1.6.1")
     implementation(project(":aspectratiolayout"))
 }

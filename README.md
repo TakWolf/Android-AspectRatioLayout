@@ -1,6 +1,7 @@
 # Android - AspectRatioLayout
 
 [![Platform](https://img.shields.io/badge/platform-Android-brightgreen)](https://developer.android.com)
+[![API](https://img.shields.io/badge/API-21%2B-brightgreen)](https://android-arsenal.com/api?level=21)
 [![License](https://img.shields.io/github/license/TakWolf/Android-AspectRatioLayout)](https://www.apache.org/licenses/LICENSE-2.0)
 [![JitPack](https://jitpack.io/v/TakWolf/Android-AspectRatioLayout.svg)](https://jitpack.io/#TakWolf/Android-AspectRatioLayout)
 
@@ -18,7 +19,7 @@ repositories {
 }
 
 dependencies {
-    implementation("com.github.TakWolf:Android-AspectRatioLayout:$version")
+    implementation("com.github.TakWolf:Android-AspectRatioLayout:0.0.1")
 }
 ```
 
