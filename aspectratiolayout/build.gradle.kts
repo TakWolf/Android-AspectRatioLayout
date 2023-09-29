@@ -22,29 +22,27 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+        }
+    }
 }
 
 dependencies {
     compileOnly("androidx.annotation:annotation:1.6.0")
 }
 
-tasks {
-    register("sourcesJar", Jar::class) {
-        from(android.sourceSets["main"].java.srcDirs)
-        archiveClassifier.set("sources")
-    }
-}
+publishing {
+    publications {
+        register<MavenPublication>("release") {
+            groupId = "com.takwolf.android.aspectratiolayout"
+            artifactId = "aspectratiolayout"
+            version = "0.0.1"
 
-afterEvaluate {
-    publishing {
-        publications {
-            create<MavenPublication>("release") {
-                groupId = "com.takwolf.android.aspectratiolayout"
-                artifactId = "aspectratiolayout"
-                version = "0.0.1"
-
+            afterEvaluate {
                 from(components["release"])
-                artifact(tasks.named("sourcesJar"))
             }
         }
     }
