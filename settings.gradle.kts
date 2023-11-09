@@ -16,4 +16,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "Android-AspectRatioLayout"
 
-include(":app", ":aspectratiolayout")
+include(":aspectratiolayout")
+include(":app")
