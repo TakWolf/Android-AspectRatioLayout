@@ -31,7 +31,7 @@ android {
 }
 
 dependencies {
-    compileOnly("androidx.annotation:annotation:1.7.0")
+    compileOnly("androidx.annotation:annotation:1.7.1")
 }
 
 publishing {
