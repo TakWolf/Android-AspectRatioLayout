@@ -35,10 +35,10 @@ public class AspectRatioLayout extends FrameLayout {
     }
 
     private void init(@NonNull Context context, @Nullable AttributeSet attrs, @AttrRes int defStyleAttr, @StyleRes int defStyleRes) {
-        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.AspectRatioLayout, defStyleAttr, defStyleRes);
-        widthRatio = a.getFloat(R.styleable.AspectRatioLayout_arl_widthRatio, 1f);
-        heightRatio = a.getFloat(R.styleable.AspectRatioLayout_arl_heightRatio, 1f);
-        a.recycle();
+        try (TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.AspectRatioLayout, defStyleAttr, defStyleRes)) {
+            widthRatio = a.getFloat(R.styleable.AspectRatioLayout_arl_widthRatio, 1f);
+            heightRatio = a.getFloat(R.styleable.AspectRatioLayout_arl_heightRatio, 1f);
+        }
     }
 
     public float getWidthRatio() {
