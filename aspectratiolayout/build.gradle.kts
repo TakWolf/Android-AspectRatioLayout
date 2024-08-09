@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.takwolf.android.aspectratiolayout"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         minSdk = 21
@@ -31,7 +31,7 @@ android {
 }
 
 dependencies {
-    compileOnly("androidx.annotation:annotation:1.8.0")
+    compileOnly("androidx.annotation:annotation:1.8.1")
 }
 
 publishing {
