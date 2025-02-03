@@ -7,9 +7,9 @@
 
 A simple aspect ratio layout for Android.
 
-## ScreenShot
+## Screenshot
 
-![ScreenShot](art/screenshot.png)
+![Screenshot](docs/screenshot.png)
 
 ## Usage
 
