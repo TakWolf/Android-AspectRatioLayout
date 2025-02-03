@@ -4,6 +4,7 @@
 [![API](https://img.shields.io/badge/API-21%2B-brightgreen)](https://android-arsenal.com/api?level=21)
 [![License](https://img.shields.io/github/license/TakWolf/Android-AspectRatioLayout)](https://www.apache.org/licenses/LICENSE-2.0)
 [![JitPack](https://jitpack.io/v/TakWolf/Android-AspectRatioLayout.svg)](https://jitpack.io/#TakWolf/Android-AspectRatioLayout)
+[<img src="https://api.gitsponsors.com/api/badge/img?id=65101391" height="20">](https://api.gitsponsors.com/api/badge/link?p=muO2vuswBArkEfJ/2dFdaZSegW1Fk6VieJUwAbqgwZnaKfESPArwz6bukNNYVRYtUnY715LTtuKIvUgL2SflbNdTJQ8HNk3bFfJ6fISHgwIMhaztnudtIyFchpmgQTncX6FaO3VO/TPgA2jvJVBEqQ==)
 
 A simple aspect ratio layout for Android.
 
