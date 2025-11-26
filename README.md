@@ -12,7 +12,7 @@ A simple aspect ratio layout for Android.
 ## Snippets
 
 ```kotlin
-implementation("io.github.takwolf.android.aspectratiolayout:aspectratiolayout:0.0.0")
+implementation("io.github.takwolf.android.aspectratiolayout:aspectratiolayout:0.0.1")
 ```
 
 ## Usage
