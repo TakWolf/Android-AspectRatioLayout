@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.takwolf.android.insetswidget.InsetsLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:isw_insetsType="statusBars|navigationBars"
+    app:isw_insetsColorTop="@color/app_primary_dark"
+    app:isw_insetsColorBottom="@android:color/white"
+    app:isw_insetsColorLeft="@android:color/white"
+    app:isw_insetsColorRight="@android:color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_primary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="@string/app_name" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:orientation="vertical">
+
+            <com.takwolf.android.aspectratiolayout.AspectRatioLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@color/red_200"
+                app:arl_widthRatio="16"
+                app:arl_heightRatio="9">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="16 : 9"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp"
+                    android:gravity="center"
+                    tools:ignore="HardcodedText" />
+
+            </com.takwolf.android.aspectratiolayout.AspectRatioLayout>
+
+            <com.takwolf.android.aspectratiolayout.AspectRatioLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@color/red_200"
+                app:arl_widthRatio="4"
+                app:arl_heightRatio="3">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="4 : 3"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp"
+                    android:gravity="center"
+                    tools:ignore="HardcodedText" />
+
+            </com.takwolf.android.aspectratiolayout.AspectRatioLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</com.takwolf.android.insetswidget.InsetsLinearLayout>
