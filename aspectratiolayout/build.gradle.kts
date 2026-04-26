@@ -35,7 +35,7 @@ mavenPublishing {
 
     pom {
         name.set("Android-AspectRatioLayout")
-        description.set("A simple aspect ratio layout for Android.")
+        description.set("A simple aspect ratio layout for Android")
         url.set("https://github.com/TakWolf/Android-AspectRatioLayout")
         inceptionYear.set("2025")
         licenses {

@@ -8,7 +8,7 @@ jobs:
   publish:
     environment:
       name: maven-central
-      url: https://central.sonatype.com/artifact/io.github.takwolf.android.aspectratiolayout/aspectratiolayout
+      url: https://central.sonatype.com/namespace/io.github.takwolf.android.aspectratiolayout
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

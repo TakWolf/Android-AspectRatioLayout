@@ -1,7 +1,7 @@
 # Android - AspectRatioLayout
 
-[![Android](https://img.shields.io/badge/android-23%2B-brightgreen)](https://developer.android.com)
-[![Maven Central](https://img.shields.io/maven-central/v/io.github.takwolf.android.aspectratiolayout/aspectratiolayout)](https://central.sonatype.com/artifact/io.github.takwolf.android.aspectratiolayout/aspectratiolayout)
+[![Android](https://img.shields.io/badge/android-23%2B-brightgreen?style=flat-square)](https://developer.android.com)
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.takwolf.android.aspectratiolayout/aspectratiolayout?style=flat-square)](https://central.sonatype.com/namespace/io.github.takwolf.android.aspectratiolayout)
 
 A simple aspect ratio layout for Android.
 
@@ -9,7 +9,7 @@ A simple aspect ratio layout for Android.
 
 ![Screenshot](docs/screenshot.png)
 
-## Snippets
+## Installation
 
 ```kotlin
 implementation("io.github.takwolf.android.aspectratiolayout:aspectratiolayout:0.0.1")
