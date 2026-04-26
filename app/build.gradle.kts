@@ -1,18 +1,19 @@
 plugins {
     id("com.android.application")
-    id("org.jetbrains.kotlin.android")
 }
 
 android {
     namespace = "com.takwolf.android.demo.aspectratiolayout"
     compileSdk {
-        version = release(36)
+        version = release(37) {
+            minorApiLevel = 0
+        }
     }
 
     defaultConfig {
         applicationId = "com.takwolf.android.demo.aspectratiolayout"
         minSdk = 23
-        targetSdk = 36
+        targetSdk = 37
         versionCode = 1
         versionName = "0.0.1"
     }
@@ -25,19 +26,15 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
-    }
-
-    kotlinOptions {
-        jvmTarget = "1.8"
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
     }
 }
 
 dependencies {
-    implementation("androidx.core:core-ktx:1.17.0")
+    implementation("androidx.core:core-ktx:1.18.0")
     implementation("androidx.appcompat:appcompat:1.7.1")
-    implementation("androidx.activity:activity-ktx:1.12.0")
+    implementation("androidx.activity:activity-ktx:1.13.0")
     implementation("io.github.takwolf.android.insetswidget:insetswidget:0.0.1")
     implementation(project(":aspectratiolayout"))
 }
