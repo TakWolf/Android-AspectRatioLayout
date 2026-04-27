@@ -7,7 +7,7 @@ android {
     namespace = "com.takwolf.android.aspectratiolayout"
     compileSdk {
         version = release(37) {
-            minorApiLevel = 0
+            minorApiLevel = 1
         }
     }
 
