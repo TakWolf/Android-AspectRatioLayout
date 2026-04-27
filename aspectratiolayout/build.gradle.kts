@@ -29,7 +29,7 @@ dependencies {
 }
 
 mavenPublishing {
-    coordinates("io.github.takwolf.android.aspectratiolayout", "aspectratiolayout", "0.0.1")
+    coordinates("io.github.takwolf.android.aspectratiolayout", "aspectratiolayout", "0.0.2")
 
     pom {
         name.set("Android-AspectRatioLayout")
