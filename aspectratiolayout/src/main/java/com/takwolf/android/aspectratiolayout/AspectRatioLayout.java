@@ -6,35 +6,35 @@ import android.util.AttributeSet;
 import android.widget.FrameLayout;
 
 import androidx.annotation.AttrRes;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.annotation.StyleRes;
+
+import org.jspecify.annotations.Nullable;
 
 public class AspectRatioLayout extends FrameLayout {
     private float widthRatio = 0f;
     private float heightRatio = 0f;
 
-    public AspectRatioLayout(@NonNull Context context) {
+    public AspectRatioLayout(Context context) {
         super(context);
         init(context, null, 0, 0);
     }
 
-    public AspectRatioLayout(@NonNull Context context, @Nullable AttributeSet attrs) {
+    public AspectRatioLayout(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         init(context, attrs, 0, 0);
     }
 
-    public AspectRatioLayout(@NonNull Context context, @Nullable AttributeSet attrs, @AttrRes int defStyleAttr) {
+    public AspectRatioLayout(Context context, @Nullable AttributeSet attrs, @AttrRes int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init(context, attrs, defStyleAttr, 0);
     }
 
-    public AspectRatioLayout(@NonNull Context context, @Nullable AttributeSet attrs, @AttrRes int defStyleAttr, @StyleRes int defStyleRes) {
+    public AspectRatioLayout(Context context, @Nullable AttributeSet attrs, @AttrRes int defStyleAttr, @StyleRes int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
         init(context, attrs, defStyleAttr, defStyleRes);
     }
 
-    private void init(@NonNull Context context, @Nullable AttributeSet attrs, @AttrRes int defStyleAttr, @StyleRes int defStyleRes) {
+    private void init(Context context, @Nullable AttributeSet attrs, @AttrRes int defStyleAttr, @StyleRes int defStyleRes) {
         try (TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.AspectRatioLayout, defStyleAttr, defStyleRes)) {
             widthRatio = a.getFloat(R.styleable.AspectRatioLayout_arl_widthRatio, 1f);
             heightRatio = a.getFloat(R.styleable.AspectRatioLayout_arl_heightRatio, 1f);

@@ -24,6 +24,7 @@ android {
 }
 
 dependencies {
+    compileOnly("org.jspecify:jspecify:1.0.0")
     compileOnly("androidx.annotation:annotation:1.10.0")
 }
 
