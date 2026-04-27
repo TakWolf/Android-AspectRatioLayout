@@ -7,7 +7,7 @@ android {
     namespace = "com.takwolf.android.aspectratiolayout"
     compileSdk {
         version = release(37) {
-            minorApiLevel = 0
+            minorApiLevel = 1
         }
     }
 
@@ -24,7 +24,7 @@ android {
 }
 
 dependencies {
-    compileOnly("org.jspecify:jspecify:1.0.0")
+    compileOnly("org.jspecify:jspecify:1.0.1")
     compileOnly("androidx.annotation:annotation:1.10.0")
 }
 
