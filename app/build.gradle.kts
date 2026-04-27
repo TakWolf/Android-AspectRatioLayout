@@ -6,7 +6,7 @@ android {
     namespace = "com.takwolf.android.demo.aspectratiolayout"
     compileSdk {
         version = release(37) {
-            minorApiLevel = 0
+            minorApiLevel = 1
         }
     }
 
@@ -32,9 +32,9 @@ android {
 }
 
 dependencies {
-    implementation("androidx.core:core-ktx:1.18.0")
+    implementation("androidx.core:core-ktx:1.19.0")
     implementation("androidx.appcompat:appcompat:1.7.1")
     implementation("androidx.activity:activity-ktx:1.13.0")
-    implementation("io.github.takwolf.android.insetswidget:insetswidget:0.0.1")
+    implementation("io.github.takwolf.android.insetswidget:insetswidget:0.0.2")
     implementation(project(":aspectratiolayout"))
 }
