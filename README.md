@@ -31,7 +31,7 @@ implementation("io.github.takwolf.android.aspectratiolayout:aspectratiolayout:0.
 
 That's it!
 
-PS: `AspectRatioLayout` is extends `FrameLayout`.
+PS: `AspectRatioLayout` is extending `FrameLayout`.
 
 ## Another way
 
