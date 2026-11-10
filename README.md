@@ -25,7 +25,7 @@ implementation("io.github.takwolf.android.aspectratiolayout:aspectratiolayout:0.
     app:arl_heightRatio="3">
 
     <YourView />
-    
+
 </com.takwolf.android.aspectratiolayout.AspectRatioLayout>
 ```
 
@@ -41,8 +41,8 @@ There is another way to make aspect ratio layout by [ConstraintLayout](https://d
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    
-    <View 
+
+    <View
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?colorPrimary"
